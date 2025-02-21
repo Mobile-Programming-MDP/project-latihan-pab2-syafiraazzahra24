@@ -1,6 +1,5 @@
 //class models
 
-
 class Karyawan {
   final String nama;
   final int umur;
