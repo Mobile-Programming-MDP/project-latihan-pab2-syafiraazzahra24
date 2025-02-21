@@ -1,0 +1,22 @@
+[
+    {
+        "nama": "Syafira Azzahra",
+        "umur" : 19,
+        "alamat" : {
+            "jalan" : "Plaju",
+            "kota" : "Palembang",
+            "Provinsi" : "Sumsel"
+        },
+        "hobi" : [""]
+    },
+    {
+        "nama": "Erika",
+        "umur" : 21,
+        "alamat" : {
+            "jalan" : "Lr. Bahagia",
+            "kota" : "Palembang",
+            "Provinsi" : "Sumsel"
+        },
+        "hobi" : [""]
+    }
+]
