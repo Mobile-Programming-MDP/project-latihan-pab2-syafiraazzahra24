@@ -44,6 +44,12 @@ class MyHomePage extends StatelessWidget {
       body: FutureBuilder<List<Karyawan>>(
         future: _readJsonData(),
         builder: (context, snapshot) {
+          if (snapshot.hasData) {
+          } else if (snapshot.hasError) {
+            return Center(
+              child: Text('${snapshot.error}'),
+            );
+          }
           return const Center(child: CircularProgressIndicator());
         },
       ),
