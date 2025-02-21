@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,9 +25,18 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
+  Future<List<Karyawan>> readJsonData() async  { //karena future
+    String response = await rootBundle.loadString("assets/karyawan.json") //harus bisa di akses asset nya
+  } 
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: const Text("Daftar Karyawan"),
+      ),
+      body: FutureBuilder(future: ..., builder: (context snapshot))
+    );
   }
 }
