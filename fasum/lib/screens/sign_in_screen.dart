@@ -19,7 +19,9 @@ class SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Sign In')),
+      appBar: AppBar(
+        title: const Text('Sign In'),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
@@ -52,16 +54,17 @@ class SignInScreenState extends State<SignInScreen> {
                     );
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
-                        builder: (context) => const HomeScreen(),
-                      ),
+                          builder: (context) => const HomeScreen()),
                     );
                   } catch (error) {
                     setState(() {
                       _errorMessage = error.toString();
                     });
-                    ScaffoldMessenger.of(
-                      context,
-                    ).showSnackBar(SnackBar(content: Text(_errorMessage)));
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(_errorMessage),
+                      ),
+                    );
                   }
                 },
                 child: const Text('Sign In'),
@@ -72,8 +75,7 @@ class SignInScreenState extends State<SignInScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const SignUpScreen(),
-                    ),
+                        builder: (context) => const SignUpScreen()),
                   );
                 },
                 child: const Text('Don\'t have an account? Sign up'),
