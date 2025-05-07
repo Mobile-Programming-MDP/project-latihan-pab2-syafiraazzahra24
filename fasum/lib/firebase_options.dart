@@ -52,6 +52,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1087935518273',
     projectId: 'fasum-app-22b2a',
     authDomain: 'fasum-app-22b2a.firebaseapp.com',
+    databaseURL: 'https://fasum-app-22b2a-default-rtdb.firebaseio.com',
     storageBucket: 'fasum-app-22b2a.firebasestorage.app',
     measurementId: 'G-J50Z2L25KQ',
   );
@@ -61,6 +62,7 @@ class DefaultFirebaseOptions {
     appId: '1:1087935518273:android:ca1dcc6cb55f63914998c0',
     messagingSenderId: '1087935518273',
     projectId: 'fasum-app-22b2a',
+    databaseURL: 'https://fasum-app-22b2a-default-rtdb.firebaseio.com',
     storageBucket: 'fasum-app-22b2a.firebasestorage.app',
   );
 
@@ -70,7 +72,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1087935518273',
     projectId: 'fasum-app-22b2a',
     authDomain: 'fasum-app-22b2a.firebaseapp.com',
+    databaseURL: 'https://fasum-app-22b2a-default-rtdb.firebaseio.com',
     storageBucket: 'fasum-app-22b2a.firebasestorage.app',
     measurementId: 'G-7MHZH6RS6Q',
   );
+
 }

@@ -67,7 +67,9 @@ class HomeScreen extends StatelessWidget {
               final description = data['description'];
               final createdAtStr = data['createdAt'];
               final fullName = data['fullName'] ?? 'Anonim';
-
+              final latitude = data['latitude'];
+              final longitude = data['longitude'];
+              final category = data['category'] ?? 'Lainnya';
               //parse ke DateTime
               final createdAt = DateTime.parse(createdAtStr);
               String heroTag =
@@ -82,9 +84,9 @@ class HomeScreen extends StatelessWidget {
                           description: description,
                           createdAt: createdAt,
                           fullName: fullName,
-                          latitude: 0.0,
-                          longitude: 0.0,
-                          category: "Jalan Rusak",
+                          latitude: latitude,
+                          longitude: longitude,
+                          category: category,
                           heroTag: heroTag),
                     ),
                   );
