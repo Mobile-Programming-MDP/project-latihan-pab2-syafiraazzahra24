@@ -1,4 +1,5 @@
 import 'dart:convert';
+
 import 'package:fasum/screens/full_image_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -144,11 +145,8 @@ class _DetailScreenState extends State<DetailScreen> {
                       //Kanan : icon map
                       IconButton(
                         onPressed: openMap,
-                        icon: const Icon(
-                          Icons.map,
-                          size: 38,
-                          color: Colors.lightGreen,
-                        ),
+                        icon: const Icon(Icons.map,
+                            size: 38, color: Colors.lightGreen),
                         tooltip: "Buka di Google Map",
                       ),
                     ],

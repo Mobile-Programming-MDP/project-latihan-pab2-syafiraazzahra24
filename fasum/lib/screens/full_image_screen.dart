@@ -11,20 +11,21 @@ class FullImageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
-        backgroundColor: Colors.black,
-        body: GestureDetector(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Center(
-            child: InteractiveViewer(
-                child: Image.memory(
+      backgroundColor: Colors.black,
+      body: GestureDetector(
+        onTap: () {
+          Navigator.pop(context);
+        },
+        child: Center(
+          child: InteractiveViewer(
+            child: Image.memory(
               base64Decode(imageBase64),
               fit: BoxFit.contain,
-            )),
+            ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

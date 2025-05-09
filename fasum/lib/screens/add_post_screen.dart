@@ -126,8 +126,8 @@ class _AddPostScreenState extends State<AddPostScreen> {
       //RequestOptions ro = const RequestOptions(apiVersion: 'v1');
       final model = GenerativeModel(
         model: 'gemini-1.5-flash',
-        apiKey:
-            'AIzaSyBGQAJ6okw2BRXGhdFfShTcT9A_2DitVEk', //gunakan api key gemini anda
+        apiKey: 'AIzaSyBGQAJ6okw2BRXGhdFfShTcT9A_2DitVEk',
+        //gunakan api key gemini anda
         //requestOptions: ro,
       );
       final imageBytes = await _image!.readAsBytes();

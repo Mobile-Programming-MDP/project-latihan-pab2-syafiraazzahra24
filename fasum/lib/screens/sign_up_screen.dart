@@ -28,7 +28,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           children: [
             TextField(
               controller: _fullNameController,
-              decoration: const InputDecoration(labelText: 'full name'),
+              decoration: const InputDecoration(labelText: 'Full Name'),
             ),
             TextField(
               controller: _emailController,
@@ -71,15 +71,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 email: _emailController.text,
                 password: _passwordController.text);
 
+        //Simpan Data Pengguna ke Firestore
         await FirebaseFirestore.instance
             .collection("users")
             .doc(newUser.user!.uid)
             .set({
-          'fullName': _fullNameController.text,
+          'fullName': _fullNameController.text.trim(),
           'email': _emailController.text,
           'createdAt': Timestamp.now()
         });
-
         if (mounted) {
           Navigator.of(context).pushReplacement(
               MaterialPageRoute(builder: (context) => const SignInScreen()));
