@@ -668,7 +668,7 @@ class _HomeScreenState extends State<HomeScreen> {
             heroTag: "myPostButton",
             onPressed: () {
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => MyPostsScreen()),
+                MaterialPageRoute(builder: (context) => MyPostScreen()),
               );
             },
             child: const Icon(Icons.person),
