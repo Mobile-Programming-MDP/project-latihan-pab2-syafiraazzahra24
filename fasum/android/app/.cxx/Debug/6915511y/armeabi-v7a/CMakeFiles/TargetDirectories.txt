@@ -1,0 +1,2 @@
+D:/syafiraPAB/project-latihan-pab2-syafiraazzahra24/fasum/android/app/.cxx/Debug/6915511y/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/syafiraPAB/project-latihan-pab2-syafiraazzahra24/fasum/android/app/.cxx/Debug/6915511y/armeabi-v7a/CMakeFiles/rebuild_cache.dir
